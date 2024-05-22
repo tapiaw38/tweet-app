@@ -135,3 +135,20 @@ The request might be done using the following query parameters:
   ]
 }
 ```
+
+## Running Tests
+
+To run the tests, you can use the following command:
+
+```sh
+go test ./...
+```
+
+## Running Coverage
+
+To run the coverage, you can use the following command:
+
+```sh
+go test -coverprofile=coverage.out ./...
+go tool cover -html=coverage.out
+```
