@@ -8,7 +8,6 @@ import (
 )
 
 func RegisterApplicationRoutes(app *gin.Engine, usecases *usecases.UseCases) {
-
 	routeGroup := app.Group("/api")
 
 	routeGroup.GET("/ping", func(c *gin.Context) {

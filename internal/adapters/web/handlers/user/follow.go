@@ -9,7 +9,6 @@ import (
 
 func NewFollowerHandler(usecase user.FollowedUsecase) gin.HandlerFunc {
 	return func(c *gin.Context) {
-
 		userIDParam := c.Params.ByName("id")
 		if userIDParam == "" {
 			c.JSON(400, gin.H{"error": "user id is required"})
