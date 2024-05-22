@@ -1,15 +1,19 @@
 package user
 
-import "github.com/tapiaw38/tweet-app/internal/domain"
+import (
+	"time"
+
+	"github.com/tapiaw38/tweet-app/internal/domain"
+)
 
 type (
 	UserOutputData struct {
-		ID        string `json:"id,omitempty"`
-		FirstName string `json:"first_name,omitempty"`
-		LastName  string `json:"last_name,omitempty"`
-		Email     string `json:"email,omitempty"`
-		CreatedAt string `json:"created_at,omitempty"`
-		UpdatedAt string `json:"updated_at,omitempty"`
+		ID        uint64    `json:"id,omitempty"`
+		FirstName string    `json:"first_name,omitempty"`
+		LastName  string    `json:"last_name,omitempty"`
+		Email     string    `json:"email,omitempty"`
+		CreatedAt time.Time `json:"created_at,omitempty"`
+		UpdatedAt time.Time `json:"updated_at,omitempty"`
 	}
 )
 
